@@ -2,8 +2,6 @@
 require 'mkmf'
 require 'rbconfig'
 
-CONFIG["DLEXT"] = "bundle"
-CONFIG["LDSHARED"] = "$(CC) -shared"
 CONFIG["CCDLFLAGS"] = " -fPIC"
         
 have_header('ruby.h') or missing('ruby.h')
