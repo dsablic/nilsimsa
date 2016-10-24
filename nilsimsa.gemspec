@@ -16,5 +16,5 @@ SPEC = Gem::Specification.new do |spec|
   spec.executables = ['nilsimsa']
 
   # optional native component
-  spec.extensions = ['ext/extconf.rb']
+  spec.extensions = ['ext/extconf.rb'] unless RUBY_PLATFORM['java']
 end
